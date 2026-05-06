@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibm+Plex+Sans:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Newsreader:ital,wght@0,600;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #bcd130;
+  --color-on-primary: #2d3400;
+  --color-primary-container: #a1b507;
+  --color-on-primary-container: #3b4300;
+  
+  --color-secondary: #c3cd85;
+  --color-on-secondary: #2d3400;
+  --color-secondary-container: #454d13;
+  --color-on-secondary-container: #b5be78;
+  
+  --color-tertiary: #d9b9ff;
+  --color-on-tertiary: #3d2260;
+  --color-tertiary-container: #bd9de4;
+  --color-on-tertiary-container: #4d3170;
+  
+  --color-background: #13140a;
+  --color-on-background: #e4e3d3;
+  
+  --color-surface: #13140a;
+  --color-on-surface: #e4e3d3;
+  --color-surface-variant: #34362a;
+  --color-on-surface-variant: #c7c8af;
+  
+  --color-outline: #91927b;
+  --color-outline-variant: #464835;
+
+  --font-sans: "Ibm Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-serif: "Newsreader", serif;
+
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-card {
+    background: rgba(31, 32, 22, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(145, 146, 123, 0.2);
+  }
+
+  .vitality-gradient {
+    background: linear-gradient(135deg, #a1b507 0%, #bcd130 100%);
+  }
+
+  .organic-shape {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  .organic-shape-alt {
+    border-radius: 30% 70% 70% 30% / 50% 60% 40% 50%;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
